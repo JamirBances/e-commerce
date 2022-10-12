@@ -1,0 +1,354 @@
+:root {
+  --header-color: #262626;
+  --body-color: #e1e8ef;
+  --color-text: #ffff;
+  --color-text-secundary: #ebeef3;
+  --background-cards: #b7c2ce;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  /* scroll-behavior: smooth; */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  background-color: var(--body-color);
+}
+
+/* HEADER */
+header{
+  background-color: var(--header-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container{
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+  height: 80px;
+}
+
+.nav-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 150px;
+}
+
+.nav-logo img{
+  margin-right: 20px;
+}
+
+.logoSkate{
+  width: 40px;
+}
+
+.nav-container div a{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  list-style:none;
+  color: var(--color-text);
+}
+
+.nav-small{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-small > a{
+  margin-right: 30px;
+}
+
+.nav-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 617px;
+}
+
+.nav-icons a img{
+  width: 20px;
+  filter: invert(100%);
+}
+
+.nav-icons a:nth-child(2) img{
+  margin-left: 20px;
+}
+
+
+@media (max-width: 1135px) {
+  .nav-container{
+    margin: 0px 24px;
+  }
+
+  .nav-icons{
+    margin-left: 0px;
+  }
+}
+/* FIN - HEADER */
+
+/* Inicio de primera sección */
+
+.first-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.first-section-container{
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+  width: 1024px;
+  padding: 3rem 0;
+}
+
+.line-separator{
+  border: none;
+  border-left: 1px solid hsla(200, 10%, 50%,100);
+  height: 3rem;
+  width: 1px;
+}
+
+@media (max-width: 766px) {
+  .first-section-container{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr 0.1fr;
+    width: 1024px;
+    padding: 3rem 0;
+  }
+
+  #third-line{
+    display: none;
+  }
+}
+
+.first-column, .second-column, .third-column, .four-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 8rem; */
+}
+
+.first-column h3, .second-column h3, .third-column h3, .four-column h3{
+  margin-top: 0;
+}
+
+.first-column p, .second-column p, .third-column p, .four-column p{
+  margin: 0;
+}
+
+/* Fin de primera sección */
+
+/* Inicio de segunda sección */
+
+.second-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-section-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1024px;
+  padding: 3rem;
+  gap: 5rem;
+}
+
+@media (max-width: 991px) {
+  .second-section-container{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem
+  }
+}
+
+@media (max-width: 575px) {
+  .second-section-container{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.first-card{
+  display: grid;
+  flex-direction: column;
+  grid-template-rows: 1fr 0.3fr;
+  border-radius: 10px;
+}
+
+.product-shape{
+  background-color: var(--background-cards);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  padding: 2rem 0;
+}
+
+.product-shape img{
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+.product-data{
+  display: grid;
+  flex-direction: column;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--header-color);
+  color: var(--color-text);
+  padding: 16px 0px 16px 24px;
+  border-radius: 0 0 10px 10px;
+}
+
+.product-price h2, .product-name h3{
+  font-weight: lighter;
+  margin: 5px 0;
+}
+
+.product-price span{
+  padding-left: 5px;
+}
+
+.product-price{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-button span{
+  background-color: var(--body-color);
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 8px 15px;
+  left: 11.3rem;
+  top: -7.5rem;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(182, 182, 189, 0.342);
+}
+
+/* Fin de segunda sección */
+
+/* Inicio de Footer */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-color);
+  padding: 3rem 0;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+  width: 100%;
+}
+
+
+.footer-information-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+  gap: 10rem;
+  padding: 2.5rem 0;
+}
+
+@media (max-width: 991px) {
+  .footer-information-container{
+    grid-template-columns: 1fr 1fr;
+    width: 85%;
+    gap: 2rem;
+  }
+}
+
+.footer-information, .about-us, .product, .social{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.footer-information h3, .about-us h3, .product h3, .social h3{
+  font-weight: lighter;
+  margin-top: 0;
+}
+
+.about-us a, .product a, .social a{
+  text-decoration: none;
+  color: var(--color-text-secundary);
+  padding: 5px 0;
+}
+
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.social-icons img{
+  height: 20px;
+}
+
+.footer-line-separator{
+  width: 930px
+}
+
+@media (max-width: 935px) {
+  .footer-line-separator{
+    width: 90%
+  }
+}
+
+.footer-information > p{
+  margin: 0;
+  padding-top: 5px;
+}  
+
+.footer-container > p{
+  padding-top: 1.5rem;
+}
+
+/* Fin de Footer */
+
+
+/* ADICIONALES */
+/* Inicio Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-cards); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--header-color); 
+}
+/* Fin Scrollbar */

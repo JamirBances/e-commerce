@@ -93,7 +93,7 @@ header{
 
 @media (max-width: 1135px) {
   .nav-container{
-    margin: 0px 24px;
+    margin: 0px 2rem;
   }
 
   .nav-icons{
@@ -127,13 +127,13 @@ header{
 @media (max-width: 766px) {
   .first-section-container{
     display: grid;
-    grid-template-columns: 1fr 0.1fr 1fr 0.1fr;
+    grid-template-columns: 1fr 0.1fr 1fr 0fr;
     width: 1024px;
     padding: 3rem 0;
   }
 
   #third-line{
-    display: none;
+    display: none; 
   }
 }
 

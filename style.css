@@ -105,6 +105,9 @@ header{
   .nav-logo{
     width: 140px;
   }
+  .nav-small > a{
+    margin-right: 20px;
+  }
 }
 
 

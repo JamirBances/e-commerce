@@ -100,6 +100,14 @@ header{
     margin-left: 0px;
   }
 }
+
+@media (max-width: 550px) {
+  .nav-logo{
+    width: 140px;
+  }
+}
+
+
 /* FIN - HEADER */
 
 /* Inicio de primera sección */

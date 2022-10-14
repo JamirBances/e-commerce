@@ -259,9 +259,9 @@ header{
 
 /* Fin de segunda sección */
 
-/* Inicio de shopping-cart */
+/* Inicio de shopping-area */
 
-.shopping-cart{
+/* .shopping-area{
   position: absolute;
   height: 60.6rem;
   width: 27.5rem;
@@ -272,7 +272,7 @@ header{
   padding: 56px 32px;
 }
 
-.shopping-cart-container{
+.shopping-area-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,9 +322,9 @@ header{
 .cart-checkout img{
   height: 15px;
   padding-right: 5px;
-}
+} */
 
-/* Fin de shopping-cart */
+/* Fin de shopping-area */
 
 /* Inicio de Footer */
 

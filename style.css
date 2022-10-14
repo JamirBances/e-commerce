@@ -17,6 +17,7 @@ html {
 
 body{
   background-color: var(--body-color);
+  position: relative;
 }
 
 /* HEADER */
@@ -257,6 +258,73 @@ header{
 }
 
 /* Fin de segunda sección */
+
+/* Inicio de shopping-cart */
+
+.shopping-cart{
+  position: absolute;
+  height: 60.6rem;
+  width: 27.5rem;
+  background-color: var(--header-color);
+  top: 0px;
+  left: 1470px;
+  color: var(--color-text);
+  padding: 56px 32px;
+}
+
+.shopping-cart-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-empty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-empty img{
+  padding: 2rem 0;
+}
+
+.cart-empty h2, .cart-empty p{
+  margin: 0;
+}
+
+.cart-prices{
+  margin-top: 96px;
+}
+
+.cart-prices > span{
+  margin-right: 30px;
+}
+
+.cart-prices span:nth-child(2){
+  margin-left: 210px;
+}
+
+.cart-checkout{
+  margin-left: 170px;
+  padding: 70px 32px;
+}
+
+.cart-checkout button{
+  height: 60px;
+  width: 140px;
+  background-color: var(--body-color);
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+}
+.cart-checkout img{
+  height: 15px;
+  padding-right: 5px;
+}
+
+/* Fin de shopping-cart */
 
 /* Inicio de Footer */
 
